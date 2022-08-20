@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы об отдыхе в городе Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -48,16 +49,16 @@
         <form class="review-form" action="https://echo.htmlacademy.ru/">
             <div class="user-names-form">
                 <h3 class="review-form__title">Представьтесь:</h3>
-                <div class="field-group">
-                    <p>
+                <div class="user-names__list names-field-group">
+                    <p class="user-names__item name-field">
                         <label class="form-label" for="user-name">Имя*:</label>
                         <input class="field" type="text" id="user-name" name="user-name" placeholder="Петр">
                     </p>
-                    <p>
+                    <p class="user-names__item name-field">
                         <label class="form-label" for="user-second-name">Фамилия*:</label>
                         <input class="field" type="text" id="user-second-name" name="user-second-name" placeholder="Пустота">
                     </p>
-                    <p>
+                    <p class="user-names__item name-field">
                         <label class="form-label" for="user-patronymic">Отчество*:</label>
                         <input class="field" type="text" id="user-patronymic" name="user-patronymic" placeholder="Викторович">
                     </p>
@@ -65,14 +66,14 @@
             </div>
             <div class="contacts-form">
                 <h3 class="review-form__title">Контактная информация:</h3>
-                <div class="field-group">
-                    <p>
+                <div class="contacts-list contacts-field-group">
+                    <p class="contacts-item contact-field">
                         <label class="form-label" for="user-phone">
       Электронная почта*:
     </label>
                         <input class="field" type="tel" id="user-phone" name="user-phone" placeholder="Введите телефон">
                     </p>
-                    <p>
+                    <p class="contacts-item contact-field">
                         <label class="form-label" for="user-email">
           Электронная почта*:
         </label>
@@ -82,20 +83,20 @@
             </div>
             <div class="impression-form">
                 <h3 class="review-form__title">Ваше общее впечатление:</h3>
-                <div class="field-group">
-                    <p class="field-radio">
+                <div class="impressoin-form__list impression-list">
+                    <p class="impression-item">
                         <input class="field-check-input" type="radio" name="radio-group" id="radio-1" checked>
                         <label class="field-check-label" for="radio-1">
                 Скорее положительное
               </label>
                     </p>
-                    <p class="field-radio">
+                    <p class="impression-item">
                         <input class="field-check-input" type="radio" name="radio-group" id="radio-2">
                         <label class="field-check-label" for="radio-2">
                 Скорее отрицательное
               </label>
                     </p>
-                    <p class="field-radio">
+                    <p class="impression-item">
                         <input class="field-check-input" type="radio" name="radio-group" id="radio-3">
                         <label class="field-check-label" for="radio-3">
                 Затрудняюсь ответить
@@ -105,26 +106,26 @@
             </div>
             <div class="visit-places-form">
                 <h3 class="review-form__title">Посещенные достопримечательности:</h3>
-                <div class="field-group">
-                    <p class="form-check">
+                <div class="visit-places__list visited-places-list">
+                    <p class="visited-places-item">
                         <input class="form-check-input" type="checkbox" value="" id="check-1" checked>
                         <label class="form-check-label" for="check-1">
                 Мост дьявола
               </label>
                     </p>
-                    <p class="form-check">
+                    <p class="visited-places-item">
                         <input class="form-check-input" type="checkbox" value="" id="check-2" checked>
                         <label class="form-check-label" for="check-2">
                 Гора-колокол
               </label>
                     </p>
-                    <p class="form-check">
+                    <p class="visited-places-item">
                         <input class="form-check-input" type="checkbox" value="" id="check-3" checked>
                         <label class="form-check-label" for="check-3">
                 Слайд-парк
               </label>
                     </p>
-                    <p class="form-check">
+                    <p class="visited-places-item">
                         <input class="form-check-input" type="checkbox" value="" id="check-4">
                         <label class="form-check-label" for="check-4">
                 Красные скалы
@@ -134,16 +135,16 @@
             </div>
             <div class="review-area">
                 <h3 class="review-form__title">Опишите свои эмоции:</h3>
-                <textarea rows="10" cols="45" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="review-area__comment" rows="10" cols="45" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
-            <button class="button review-submit" type="submit">Отправить отзыв</button>
-            <p>* — обязательные поля</p>
+            <button class="review-area__button" type="submit">Отправить отзыв</button>
+            <p class="review-area__note">* — обязательные поля</p>
         </form>
     </main>
-    <footer class="main-footer__container main-footer">
+    <footer class="main-footer-container main-footer">
         <b class="main-footer__title">#visitsedona</b>
         <ul class="main-footer__socials socials-list">
-            <li class="socials-list__item">
+            <li class="socials-list__item socials-item">
                 <a class="socials__link socials__link--vk" href="#">
                     <svg class="socials__icon--vk" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" fill="#81B3D2"/>
@@ -158,14 +159,14 @@
                 </svg>
                 </a>
             </li>
-            <li class="socials-list__item">
+            <li class="socials-list__item socials-item">
                 <a class="socials__link socials__link--telegram" href="#"><svg class="socials__icon--telegram" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" fill="#81B3D2"/>
                 <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z" fill="white"/>
                 </svg>
                 </a>
             </li>
-            <li class="socials-list__item">
+            <li class="socials-list__item socials-item">
                 <a class="socials__link socials__link--youtube" href="#"><svg class="socials__icon--youtube" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" fill="#81B3D2"/>
                 <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
