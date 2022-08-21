@@ -30,7 +30,7 @@
         <div class="main-header__intro intro">
             <h1 class="visually-hidden">Седона</h1>
             <div class="intro__content">
-                <svg width="282" height="49" viewBox="0 0 282 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="intro-text" width="282" height="49" viewBox="0 0 282 49" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M27.1874 13.3723C24.978 11.5378 22.2163 10.3148 19.2705 10.3148C17.0612 10.3148 14.1767 11.5989 14.1767 14.1672C14.1767 16.8578 17.4294 17.8973 19.4546 18.5088L22.5232 19.426C28.9058 21.3216 33.8768 24.5014 33.8768 31.9005C33.8768 36.4255 32.7721 41.134 29.1513 44.1915C25.5304 47.2489 20.7434 48.4719 16.1406 48.4719C10.3717 48.4719 4.6642 46.5151 0 43.2742L4.97106 33.7961C7.97824 36.4255 11.4764 38.5046 15.5882 38.5046C18.4113 38.5046 21.3571 37.0981 21.3571 33.9184C21.3571 30.5552 16.6929 29.4545 14.1153 28.7207C6.62807 26.5193 1.71839 24.6237 1.71839 15.7571C1.71839 6.46239 8.34646 0.408615 17.5521 0.408615C22.155 0.408615 27.8625 1.8762 31.913 4.19987L27.1874 13.3723Z" fill="white"/>
               <path d="M56.2158 11.6602V19.3038H69.6561V29.3935H56.2158V37.2817H70.4539V47.3713H44.3098V1.63171H70.4539V11.7213L56.2158 11.6602Z" fill="white"/>
               <path d="M79.2914 1.63171H96.2298C108.995 1.63171 119.551 11.6602 119.551 24.5015C119.551 37.3429 108.934 47.3713 96.2298 47.3713H79.2914V1.63171ZM91.2587 37.2817H93.9591C101.078 37.2817 107.154 33.3682 107.154 24.5015C107.154 16.3075 101.753 11.7213 94.0818 11.7213H91.2587V37.2817Z" fill="white"/>
@@ -43,60 +43,64 @@
             <img class="intro-inner__mask-image" src="./img/intro-triangle.png" alt="" width="320" height="57">
         </div>
     </header>
-    <main class="main-container">
-        <h2 class="main__title">Фото и видео</h2>
-        <p class="main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <ul class="main__photos photos">
-            <li class="photos__item photo-item">
-                <img class="item__image" src="./img/catalog/sedona-about-01.jpg" alt="Природа в городе Седона в Аризоне" width="280" height="280">
-                <h3 class="item__title">Неродные просторы</h3>
-                <p class="item__author">Автор фото: Борис</p>
-                <div class="item__rating rating">
-                    <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <main class="main-container main-content">
+        <div class="main-content__intro">
+            <h2 class="main__title">Фото и видео</h2>
+            <p class="main__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <div class="main__photos">
+            <ul class="photos-list">
+                <li class="photos__item photo-item">
+                    <img class="photo-item__image" src="./img/catalog/sedona-about-01.jpg" alt="Природа в городе Седона в Аризоне" width="280" height="280">
+                    <h3 class="photo-item__title">Неродные просторы</h3>
+                    <p class="photo-item__author">Автор фото: Борис</p>
+                    <div class="photo-item__rating rating">
+                        <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
-                    <b class="rating__counter">1350</b>
-                </div>
-            </li>
-            <li class="photos__item photo-item">
-                <img class="item__image" src="./img/catalog/sedona-about-02.jpg" alt="Растительность в городе Седона в Аризоне" width="280" height="280">
-                <h3 class="item__title">Местная растительность</h3>
-                <p class="item__author">Автор фото: Сергей</p>
-                <div class="rating">
-                    <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <b class="photo-rating__counter">1350</b>
+                    </div>
+                </li>
+                <li class="photos__item photo-item">
+                    <img class="photo-item__image" src="./img/catalog/sedona-about-02.jpg" alt="Растительность в городе Седона в Аризоне" width="280" height="280">
+                    <h3 class="photo-item__title">Местная растительность</h3>
+                    <p class="photo-item__author">Автор фото: Сергей</p>
+                    <div class="photo-item__rating rating">
+                        <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
-                    <b class="rating__counter">143</b>
-                </div>
-            </li>
-            <li class="photos__item photo-item">
-                <img class="item__image" src="./img/catalog/sedona-about-03.jpg" alt="Дорога в городе Седона в Аризоне" width="280" height="280">
-                <h3 class="item__title">Дорога на север</h3>
-                <p class="item__author">Автор фото: Петр</p>
-                <div class="rating">
-                    <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <b class="photo-rating__counter">143</b>
+                    </div>
+                </li>
+                <li class="photos__item photo-item">
+                    <img class="photo-item__image" src="./img/catalog/sedona-about-03.jpg" alt="Дорога в городе Седона в Аризоне" width="280" height="280">
+                    <h3 class="photo-item__title">Дорога на север</h3>
+                    <p class="photo-item__author">Автор фото: Петр</p>
+                    <div class="photo-item__rating rating">
+                        <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
-                    <b class="rating__counter">96</b>
-                </div>
-            </li>
-            <li class="photos__item photo-item">
-                <img class="item__image" src="./img/catalog/sedona-about-04.jpg" alt="Мост дьявола, город Седона в Аризоне" width="280" height="280">
-                <h3 class="item__title">Мост дьявола</h3>
-                <p class="item__author">Автор фото: Антон</p>
-                <div class="rating">
-                    <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <b class="rating__counter">96</b>
+                    </div>
+                </li>
+                <li class="photos__item photo-item">
+                    <img class="photo-item__image" src="./img/catalog/sedona-about-04.jpg" alt="Мост дьявола, город Седона в Аризоне" width="280" height="280">
+                    <h3 class="photo-item__title">Мост дьявола</h3>
+                    <p class="photo-item__author">Автор фото: Антон</p>
+                    <div class="photo-item__rating rating">
+                        <svg class="rating__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
                   </svg>
-                    <b class="rating__counter">254</b>
-                </div>
-            </li>
-        </ul>
+                        <b class="rating__counter">254</b>
+                    </div>
+                </li>
+            </ul>
+        </div>
         <section class="videopresentation">
             <h2 class="visually-hidden">Презентация городка: видеоролик о Седоне</h2>
             <p class="videopresentation__title">Всё еще сомневаетесь?</p>
             <p class="videopresentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4fCJTUchxqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="" src="https://www.youtube.com/embed/4fCJTUchxqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     </main>
     <footer class="main-footer-container main-footer">
