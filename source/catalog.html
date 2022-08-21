@@ -10,21 +10,23 @@
 </head>
 
 <body class="page__body">
-    <header class="main-header">
-        <a class="main-header__logo">
-            <img src="./img/header-logo.png" alt="Седона" width="185" height="96">
-        </a>
-        <nav class="main-header__nav main-nav">
-            <button class="main-nav__toggle" type="button">
-    <span class="visually-hidden">Открыть меню</span>
+    <header class="main-header ">
+        <div class="main-header__top header-top">
+            <a class="main-header-logo main-header__logo-link">
+                <img class="main-header__logo" src="./img/header-logo.png" alt="Седона" width="185" height="96">
+            </a>
+            <nav class="main-header__nav main-nav">
+                <button class="main-nav__toggle" type="button">
+    <span class="menu-burger visually-hidden">Открыть меню</span>
     </button>
-            <ul class="main-nav__list main-menu visually-hidden">
-                <li class="main-menu__item main-menu__item--active"><a class="item__link">Главная</a></li>
-                <li class="main-menu__item"><a class="item__link" href="#">Фото и видео</a></li>
-                <li class="main-menu__item"><a class="item__link" href="#">Форма отзыва</a></li>
-                <li class="main-menu__item"><a class="item__link" href="#">HTML Academy</a></li>
-            </ul>
-        </nav>
+                <ul class="main-nav__list main-menu visually-hidden">
+                    <li class="main-menu__item main-menu__item--active"><a class="item__link">Главная</a></li>
+                    <li class="main-menu__item"><a class="item__link" href="#">Фото и видео</a></li>
+                    <li class="main-menu__item"><a class="item__link" href="#">Форма отзыва</a></li>
+                    <li class="main-menu__item"><a class="item__link" href="#">HTML Academy</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="main-header__intro intro">
             <h1 class="visually-hidden">Седона</h1>
             <div class="intro__content">
@@ -36,8 +38,9 @@
               <path d="M182.272 1.63171H194.239L216.087 29.6381H216.21V1.63171H228.178V47.3713H216.21L194.362 19.3038H194.239V47.3713H182.272V1.63171Z" fill="white"/>
               <path d="M249.842 39.4219L246.65 47.3713H234.008L251.683 1.63171H264.693L282 47.3713H269.296L266.289 39.4219H249.842ZM258.188 15.7572H258.065L253.156 30.3107H263.098L258.188 15.7572Z" fill="white"/>
               </svg>
-                <img src="./img/intro-triangle.png" alt="">
+
             </div>
+            <img class="intro-inner__mask-image" src="./img/intro-triangle.png" alt="" width="320" height="57">
         </div>
     </header>
     <main class="main-container">
