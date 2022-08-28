@@ -88,26 +88,24 @@
   background-size: cover;
   position: relative;
 }
+.intro::after {
+  content: url("../img/intro-triangle-big.png");
+  width: 768px;
+  height: 57px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .intro__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 90px;
   padding-bottom: 85px;
-}
-.intro-inner__mask-image {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  object-fit: cover;
-}
-@media (min-width: 768px) {
-  .intro-inner__mask-image {
-    transform: translate(-50%);
-    left: 50%;
-    min-height: 57px;
-    width: 100%;
-  }
 }
 .main-nav__toggle {
   display: block;
