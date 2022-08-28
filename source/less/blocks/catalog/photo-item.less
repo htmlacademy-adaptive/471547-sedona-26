@@ -6,11 +6,31 @@
 .photo-item__title {
   margin: 0;
   font-weight: 700;
-
 }
 
 .photo-item__author {
   margin: 0;
   color: @dark;
   font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .photo-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .photo-item__image {
+    z-index: 1;
+    grid-area: 2 / 1 / 2 / 2;
+  }
+  .photo-item__content {
+    z-index: 10;
+    grid-area: 2 / 1 / 2 / 2;
+    background-color: @black;
+    opacity: 0.3;
+    color: @white;
+    min-height: 80px;
+    margin-top: auto;
+  }
 }
